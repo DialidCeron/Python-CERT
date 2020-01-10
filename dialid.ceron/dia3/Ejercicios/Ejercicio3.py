@@ -35,6 +35,7 @@ def imprime_calificaciones():
 asigna_calificaciones()
 imprime_calificaciones()
 
+#Función que obtiene las tuplas de alumnos aprobados y reprobados
 def aprobados_reprobados():
 	aprobados=[]
 	reprobados=[]
@@ -45,11 +46,14 @@ def aprobados_reprobados():
 			reprobados.append(alumno)
 	tupla_apr=tuple(aprobados)
 	tupla_rep=tuple(reprobados)
-	print("Alumnos aprobados: ", tupla_apr)
-	print("Alumnos reprobados: ", tupla_rep)
 	return tupla_apr, tupla_rep
 
+tupla_apr, tupla_rep = aprobados_reprobados()
+print("Alumnos aprobados: ", tupla_apr)
+print("Alumnos reprobados: ", tupla_rep)
+
 aprobados_reprobados()
+#Función que obtiene el promedio de calificaciones
 
 def promedio():
 	promedio=0
@@ -57,14 +61,13 @@ def promedio():
 		promedio+=calificacion_alumno[alumno]
 	promedio=promedio/len(calificacion_alumno)
 	promedio=round(promedio,0)
-	print(promedio)
+	print("El promedio de calificaciones es: ", promedio)
 	return promedio
 
 promedio()
 
-def conjunto_cal():
-	conjunto_cal={}
-	for alumno in calificacion_alumno:
-		conjunto_cal.add(calificacion_alumno[alumno])
-
-conjunto_cal()
+#Función que obtiene el conjunto de las calificaciones
+def conjunto_calificaciones():
+    return set(calificacion_alumno.values())
+	
+print("El conjunto de las calificaciones es: ", conjunto_calificaciones())
