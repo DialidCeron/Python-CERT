@@ -1,0 +1,14 @@
+Fecha: 14-01-2020 11:18:08
+MD5: 3dab5b16a2054b4e19ded6af08596c08
+SHA1: ef3c3dc11affadf2dc1e5497dd9a2e0e6cbd5dfa
+Hosts prendidos: 4826
+Hosts apagados: 60687
+Hosts con puerto 22 abierto: 1095
+Hosts con puerto 53 abierto: 65
+Hosts con puerto 80 abierto: 2008
+Hosts con puerto 443 abierto: 1387
+Hosts con nombre de dominio: 12468
+Hosts que usan Apache: 401
+Hosts que usan Nginx: 30
+Hosts que usan Dionaea: 612
+Hosts que usan otro servicio: 1039
