@@ -123,6 +123,18 @@ def get_tor_session():
     return session
 
 #Condiciones de ejecución
+"""
+	-Revisar opciones
+	-Crear la URL
+	-Crear lista de usuarios
+	-Crear lista de contraseñas
+	-Revisar si es Digest o Basic
+	-Revisar si se especifica la opción Tor, abrir sesión en su caso
+	-Encontrar la ip de origen de acuerdo a la expresión regular en el objeto de sesión
+	-Para cada usuario con cada contraseña realizar un make request con el user agent de la lista correspondiente según la cantidad de user agents seleccionados con la bandera.
+	-Si el make request es exitoso imprime las credenciales. 
+	-Se incluye manejo de excepciones para errores en general.
+"""
 if __name__ == '__main__':
     try:
         opts = addOptions()
